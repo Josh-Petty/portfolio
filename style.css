@@ -11,10 +11,12 @@ body {
 /* Main Content */
 
 .container-fluid {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 120px;
+  padding-right: 120px;
   height: 100%;
 }
+
+/* Hero Section */
 
 .hero-section {
   background-image: url(./images/sergey-zolkin-_UeY8aTI6d0-unsplash.jpg);
@@ -35,4 +37,28 @@ body {
 
 .hero-section h3 {
   font-size: 2.25rem;
+}
+
+@media (max-width: 641px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section h3 {
+    font-size: 1.45rem;
+  }
+}
+
+/* About Section */
+
+.about-text {
+  padding: 40px 80px;
+  border-top: 1px solid #222;
+  border-right: 1px solid #222;
+  border-bottom: 1px solid #222;
+}
+
+.about-text p {
+  font-size: 24px;
+  line-height: 1.5;
 }
