@@ -1,0 +1,10 @@
+/* Navbar */
+
+.navbar {
+  background-color: #48C2B3;
+}
+
+.container-fluid {
+  padding-left: 40px;
+  padding-right: 40px;
+}
