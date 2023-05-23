@@ -11,9 +11,17 @@ body {
 /* Main Content */
 
 .container-fluid {
+  max-width: 1440px;
   padding-left: 120px;
   padding-right: 120px;
   height: 100%;
+}
+
+@media (max-width: 684px) {
+  .container-fluid {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
 
 /* Hero Section */
@@ -51,14 +59,88 @@ body {
 
 /* About Section */
 
+.aspectRatioBoxAbout {
+  background-image: url(https://picsum.photos/500/400);
+  padding-top: calc(412.4 / 500 * 100%);
+  background-size: cover;
+  background-position: center;
+}
+
 .about-text {
   padding: 40px 80px;
   border-top: 1px solid #222;
   border-right: 1px solid #222;
   border-bottom: 1px solid #222;
+  color: #48C2B3;
 }
 
 .about-text p {
   font-size: 24px;
   line-height: 1.5;
 }
+
+@media (max-width: 1439px) {
+  .about-text h2 {
+    font-size: 24px;
+  }
+
+  .about-text p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1299px) {
+  .about-text {
+    padding: 20px 40px;
+  }
+
+  .about-text h2 {
+    font-size: 20px;
+  }
+
+  .about-text p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1099px) {
+  .about-text {
+    padding: 12px 18px;
+  }
+
+  .about-text h2 {
+    font-size: 20px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 991px) {
+  .about-text {
+    border-left: 1px solid #222;
+    padding: 20px 40px;
+  }
+
+  .about-text h2 {
+    font-size: 24px;
+  }
+
+  .about-text p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 614px) {
+  .about-text h2 {
+    font-size: 20px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
+}
+
+/* Portfolio Section */
+
