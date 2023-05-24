@@ -17,10 +17,35 @@ body {
   height: 100%;
 }
 
+@media (min-width: 768px) and (max-width: 969px) {
+  .container-fluid {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
 @media (max-width: 684px) {
   .container-fluid {
     padding-left: 80px;
     padding-right: 80px;
+  }
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.header {
+  margin-left: 120px;
+  margin-bottom: 40px;
+  border-left: 4px solid #48C2B3;
+}
+
+@media (max-width: 991px) {
+  .header {
+    margin-left: 0;
   }
 }
 
@@ -59,15 +84,20 @@ body {
 
 /* About Section */
 
+#about {
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
 .aspectRatioBoxAbout {
-  background-image: url(https://picsum.photos/500/400);
+  background-image: url(https://picsum.photos/1200/1200);
   padding-top: calc(412.4 / 500 * 100%);
   background-size: cover;
   background-position: center;
 }
 
 .about-text {
-  padding: 40px 80px;
+  padding: 75px 75px;
   border-top: 1px solid #222;
   border-right: 1px solid #222;
   border-bottom: 1px solid #222;
@@ -79,11 +109,7 @@ body {
   line-height: 1.5;
 }
 
-@media (max-width: 1439px) {
-  .about-text h2 {
-    font-size: 24px;
-  }
-
+@media (max-width: 1419px) {
   .about-text p {
     font-size: 20px;
   }
@@ -91,11 +117,7 @@ body {
 
 @media (max-width: 1299px) {
   .about-text {
-    padding: 20px 40px;
-  }
-
-  .about-text h2 {
-    font-size: 20px;
+    padding: 50px 50px;
   }
 
   .about-text p {
@@ -105,11 +127,7 @@ body {
 
 @media (max-width: 1099px) {
   .about-text {
-    padding: 12px 18px;
-  }
-
-  .about-text h2 {
-    font-size: 20px;
+    padding: 35px 35px;
   }
 
   .about-text p {
@@ -122,25 +140,68 @@ body {
     border-left: 1px solid #222;
     padding: 20px 40px;
   }
-
-  .about-text h2 {
-    font-size: 24px;
-  }
-
+  
   .about-text p {
     font-size: 20px;
   }
 }
 
 @media (max-width: 614px) {
-  .about-text h2 {
-    font-size: 20px;
-  }
-
   .about-text p {
     font-size: 16px;
   }
 }
 
 /* Portfolio Section */
+
+#portfolio {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.aspectRatioBoxPortfolio {
+  background-image: url(https://picsum.photos/800/800);
+  padding-top: calc(2 / 3 * 100%);
+  background-size: cover;
+  background-position: center;
+}
+
+.inner {
+  color: rgba(255,255,255,0);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all .5s ease-in-out;
+}
+
+.inner a {
+  text-decoration: none;
+  color: rgba(255,255,255,0);
+  transition: all .5s ease-in-out;
+}
+
+@media (min-width: 1200px) and (max-width: 1349px) {
+  .inner, .inner a {
+    font-size: .8rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 849px) {
+  .inner, .inner a {
+    font-size: .8rem;
+  }
+}
+
+.aspectRatioBoxPortfolio:hover .inner {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  color: rgba(255,255,255,1);
+}
+
+.aspectRatioBoxPortfolio:hover .inner a {
+  color: rgba(255,255,255,1);
+}
+
+/* Contact Me Section */
 
