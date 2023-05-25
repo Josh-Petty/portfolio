@@ -1,11 +1,23 @@
 body {
-  font-family: 'Courgette', 'Fira Sans', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 /* Navbar */
 
 .navbar {
   background-color: #48C2B3;
+}
+
+.navbar a {
+  color: #fff;
+}
+
+.navbar a:visited {
+  color: #fff;
+}
+
+.navbar a:hover {
+  color: rgba(0, 0, 0, .5);
 }
 
 /* Main Content */
@@ -94,6 +106,8 @@ hr {
   padding-top: calc(412.4 / 500 * 100%);
   background-size: cover;
   background-position: center;
+  border-bottom-left-radius: var(--bs-border-radius-lg);
+  border-top-left-radius: var(--bs-border-radius-lg);
 }
 
 .about-text {
@@ -102,6 +116,20 @@ hr {
   border-right: 1px solid #222;
   border-bottom: 1px solid #222;
   color: #48C2B3;
+  border-bottom-right-radius: var(--bs-border-radius-lg);
+  border-top-right-radius: var(--bs-border-radius-lg);
+}
+
+@media (max-width: 991px) {
+  .aspectRatioBoxAbout {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: var(--bs-border-radius-lg);
+  }
+
+  .about-text {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: var(--bs-border-radius-lg);
+  }
 }
 
 .about-text p {
@@ -156,7 +184,7 @@ hr {
 
 #portfolio {
   padding-top: 80px;
-  padding-bottom: 40px;
+  padding-bottom: 70px;
 }
 
 .aspectRatioBoxPortfolio {
@@ -205,3 +233,87 @@ hr {
 
 /* Contact Me Section */
 
+#contact {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.icon {
+  float: left;
+  font-size: 24px;
+  border-radius: 50%;
+  padding: 14px;
+  background-color: rgba(255, 255, 255, .30);
+  color: #fff;
+}
+
+.info-box {
+  padding: 20px;
+  width: 100%;
+  background-color: #48C2B3;
+}
+
+.info-box h3 {
+  font-size: 20px;
+  margin-left: 68px;
+  padding-top: 10px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.info-box p {
+  line-height: 24px;
+  font-size: 16px;
+  margin-left: 68px;
+  color: #fff;
+}
+
+.info-box a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-links {
+  margin-left: 68px;
+}
+
+.social-links a {
+  font-size: 24px;
+  margin-right: 12px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.info-box a:hover {
+  color: rgba(0, 0, 0, .5);
+}
+
+/* Footer Section */
+
+#footer {
+  background-color: #48C2B3;
+  color: #fff;
+}
+
+.footer-content a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  color: rgba(0, 0, 0, .5);
+}
+
+@media (max-width: 767px) {
+  #footer {
+    padding-bottom: 15px;
+  }
+
+  .footer-content {
+    align-items: center;
+  }
+
+  .footer-content p {
+    margin-bottom: 0;
+  }
+}
